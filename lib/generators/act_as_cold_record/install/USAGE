@@ -1,0 +1,3 @@
+Description:
+  Generates (but does not run) a migration to add a metadatum table. Also generates an initializer
+  file for configuring ActAsColdRecord.

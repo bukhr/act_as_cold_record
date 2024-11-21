@@ -1,0 +1,14 @@
+# This migration creates the `cold_record_metadata` table
+class CreateColdRecordMetadata < ActiveRecord::Migration<%= migration_version %>
+
+  def change
+    create_table :cold_record_metadata do |t|
+      t.string :model
+      t.string :path
+      t.string :path_uuid
+      t.integer :records_count
+      t.boolean :restored, default: false
+      t.timestamps
+    end
+  end
+end
